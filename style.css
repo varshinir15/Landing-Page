@@ -1,0 +1,216 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Segoe UI';
+}
+
+/* ============= Navbar Styles ============== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 50px;
+}
+
+.navbar-brand{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 30px;
+}
+
+.navbar-menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu-item{
+    margin:0px 10px;
+    padding:5px 10px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.navbar-menu-item:hover{
+    cursor: pointer;
+    background: black;
+    color:rgb(255, 230, 0);
+    border-radius: 10px;
+}
+
+.circle{
+    width:1000px;
+    height:1000px;
+    border-radius: 50%;
+    background: rgb(255, 230, 0);
+    position: absolute;
+    right:-350px;
+    top:-350px;
+    z-index: -1;
+    border:100px solid rgb(255, 238, 83);
+}
+
+/* ============= Banner styles ============= */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.banner-left{
+    width:50%;
+}
+
+.banner-left .title{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 60px;
+}
+
+.banner-left .sub-title{
+    font-size: 18px;
+    margin:30px 0px;
+}
+
+.banner-left button{
+    padding:10px 15px;
+    background-color: rgb(255, 230, 0);
+    color:#000;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.banner-left button:hover{
+    background-color: black;
+    color:rgb(255, 230, 0);
+}
+
+.banner-right img{
+    filter: drop-shadow(0px 10px 10px black);
+}
+
+/* =========== Ticker Container Styles ============ */
+
+.ticker-container{
+    margin-top: 200px;
+    width:100%;
+    background-color: orange;
+    padding:50px;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticker-container h2{
+    font-size: 32px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.img-ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ticker-kf 18s linear infinite;
+    margin-top: 40px;
+}
+
+.img-ticker img{
+    width:400px;
+    filter:drop-shadow(5px 5px 5px #000);
+}
+
+/* ============= Delivery Container Styles */
+.delivery-container{
+    background-color: rgb(149, 225, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 0px;
+}
+
+.delivery-left{
+    padding:40px;
+}
+
+.delivery-left h1{
+    font-size: 32px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.delivery-left button{
+    margin-top: 20px;
+    padding:10px 15px;
+    background-color: dodgerblue;
+    color:#fff;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.delivery-left button:hover{
+    background: #000;
+    color:rgb(149, 225, 255);
+}
+
+.delivery-right img{
+    width:600px;
+    border:50px solid #fff;
+}
+
+/* ========= footer styles ========= */
+.footer{
+    background: #000;
+    padding:50px;
+    padding-bottom: 20px;
+    color:#fff;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer-brand{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons i{
+    font-size: 40px;
+    margin:0px 5px;
+}
+
+.icons i:hover{
+    cursor: pointer;
+}
+
+@keyframes ticker-kf {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-115rem, 0, 0);
+    }
+  }
